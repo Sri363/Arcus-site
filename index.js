@@ -3,10 +3,11 @@ $(document).ready(function () {
     let offset = { offset: "70%" }
     $(".founders").hide();
     $(".tech-team-cards").hide();
+    $(".nav-links-mobile").hide();
 
     $(".menu-icon").click(function () {
-        $(".nav-links").toggle()
-    })
+        $(".nav-links-mobile").toggle()
+    });
     $(".title").addClass("animate__animated animate__backInDown");
     $(".heading").waypoint(function () {
         $(".heading").addClass("animate__animated animate__fadeInLeftBig");
@@ -44,5 +45,4 @@ $(document).ready(function () {
             height: 'toggle'
         });
     })
-});
-
+})
