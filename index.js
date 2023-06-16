@@ -3,6 +3,7 @@ $(document).ready(function () {
     let offset = { offset: "70%" }
     $(".founders").hide();
     $(".tech-team-cards").hide();
+    $(".sales-team-cards").hide();
     $(".nav-links-mobile").hide();
 
     $(".menu-icon").click(function () {
@@ -40,8 +41,13 @@ $(document).ready(function () {
             height: 'toggle'
         });
     })
-    $(".team-view").click(function () {
+    $(".tech-team-view").click(function () {
         $(".tech-team-cards").animate({
+            height: 'toggle'
+        });
+    })
+    $(".sales-team-view").click(function () {
+        $(".sales-team-cards").animate({
             height: 'toggle'
         });
     })
