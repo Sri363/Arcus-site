@@ -9,6 +9,7 @@ $(document).ready(function () {
     $(".menu-icon").click(function () {
         $(".nav-links-mobile").toggle()
     });
+    //adding animation
     $(".title").addClass("animate__animated animate__backInDown");
     $(".heading").waypoint(function () {
         $(".heading").addClass("animate__animated animate__fadeInLeftBig");
@@ -36,6 +37,7 @@ $(document).ready(function () {
     $(".secondsec-para").waypoint(function () {
         $(".founders-btn").addClass("animate__animated animate__fadeInUP")
     }, offset);
+    //adding click function
     $(".founders-btn").click(function () {
         $(".founders").animate({
             height: 'toggle'
@@ -50,5 +52,8 @@ $(document).ready(function () {
         $(".sales-team-cards").animate({
             height: 'toggle'
         });
+    })
+    $(".product-btn").click(function () {
+
     })
 })
